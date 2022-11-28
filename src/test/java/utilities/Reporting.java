@@ -56,20 +56,20 @@ public class Reporting extends TestListenerAdapter {
 	}
 
 	public void onTestSuccess(ITestResult tr) {
-		test = extent.createTest(tr.getName());
+		test = extent.createTest(tr.getMethod().getRealClass().getName());
 		test.log(Status.PASS, MarkupHelper.createLabel(tr.getName() + "Test Case Passed", ExtentColor.GREEN));
 
 	}
 
 	public void onTestSkipped(ITestResult tr) {
-		test = extent.createTest(tr.getName());
+		test = extent.createTest(tr.getMethod().getRealClass().getName());
 		test.log(Status.FAIL, MarkupHelper.createLabel(tr.getName() + "Test Case Skipped", ExtentColor.ORANGE));
 
 	}
 
 	public void onTestFailure(ITestResult tr) {
 
-		test = extent.createTest(tr.getName());
+		test = extent.createTest(tr.getMethod().getRealClass().getName());
 		test.log(Status.FAIL, MarkupHelper.createLabel(tr.getName() + "Test Case Failed", ExtentColor.RED));
 		test.log(Status.FAIL, MarkupHelper.createLabel(tr.getThrowable() + "Test Case Failed", ExtentColor.RED));
 		String screenshotpath=System.getProperty("user.dir")+"/Screenshots"+tr.getName()+".png";
