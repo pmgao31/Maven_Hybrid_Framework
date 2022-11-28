@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 19.723 s <<< FAILURE! - in TestSuite
-testCases.TC_ProjectHours_002.EnterTimesheet  Time elapsed: 3.189 s  <<< FAILURE!
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.853 s <<< FAILURE! - in TestSuite
+testCases.TC_ProjectHours_002.EnterTimesheet  Time elapsed: 2.364 s  <<< FAILURE!
 java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
