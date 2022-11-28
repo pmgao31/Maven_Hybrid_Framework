@@ -7,13 +7,13 @@
   <test thread-count="5" name="TimeSheet Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_ProjectHours_002">
+      <class name="testCases.TC_LoginTest_001">
         <methods>
           <include name="teardown"/>
-          <include name="EnterTimesheet" invocation-numbers="2"/>
+          <include name="logintest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC_ProjectHours_002 -->
+      </class> <!-- testCases.TC_LoginTest_001 -->
     </classes>
   </test> <!-- TimeSheet Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
