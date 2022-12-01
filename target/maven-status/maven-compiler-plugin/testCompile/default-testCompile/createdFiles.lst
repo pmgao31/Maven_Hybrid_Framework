@@ -1,9 +1,0 @@
-pageObjects\LoginPage.class
-testCases\TC_LoginTest_001.class
-utilities\XLUtils.class
-pageObjects\HomePage.class
-pageObjects\TimeSheetPage.class
-utilities\Reporting.class
-testCases\TC_ProjectHours_002.class
-pageObjects\Baseclass.class
-utilities\ReadConfig.class
