@@ -72,11 +72,11 @@ public class Reporting extends TestListenerAdapter {
 		test = extent.createTest(tr.getMethod().getRealClass().getName());
 		test.log(Status.FAIL, MarkupHelper.createLabel(tr.getName() + "Test Case Failed", ExtentColor.RED));
 		test.log(Status.FAIL, MarkupHelper.createLabel(tr.getThrowable() + "Test Case Failed", ExtentColor.RED));
-		String screenshotpath=System.getProperty("user.dir")+"/Screenshots"+tr.getName()+".png";
+		String screenshotpath=System.getProperty("user.dir") + "/Screenshots/"+tr.getName()+".png";
 		File f=new File(screenshotpath);
 		if(f.exists()) {
 			try {
-				test.fail("Screenshot is below:"+test.addScreenCaptureFromPath(screenshotpath));
+				test.addScreenCaptureFromPath(screenshotpath);
 			}catch(Exception e) {
 				e.printStackTrace();
 			}

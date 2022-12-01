@@ -65,7 +65,7 @@ public class TC_ProjectHours_002 extends Baseclass {
 	@DataProvider(name = "TC_001-Timesheet")
 	String[][] getData() throws Exception {
 
-		String path = "C:\\Users\\Prasanth M\\eclipse-workspace\\Maven_Hybrid_Framework\\testData\\TC_001-Timesheet.xlsx";
+		String path = "./testData/TC_001-Timesheet.xlsx";
 		
 		int rowcount = XLUtils.getRowCount(path, "Sheet1");
 		int cellcount = XLUtils.getCellCount(path, "Sheet1", 1);

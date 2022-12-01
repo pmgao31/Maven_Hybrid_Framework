@@ -23,7 +23,7 @@ public class TC_LoginTest_001 extends Baseclass {
 		lp.ClickSignInbtn();
 		logger.info("clicked on Sign In button");
 
-		if (driver.getTitle().equals("Timesheet")) {
+		if (driver.getTitle().equals("Teimesheet")) {
 			logger.info("Test Case Passed");
 			Assert.assertTrue(true);
 		} else {
